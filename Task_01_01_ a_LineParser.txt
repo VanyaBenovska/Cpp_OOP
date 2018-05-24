@@ -1,0 +1,18 @@
+Task1 - a_LineParser - Parse input string (only digits and space for delimiter) to ints, strings or chars
+Implement a LineParser class, which takes in a string and has methods to parse the string into an array of numbers, 
+an array of strings (by getting the words separated by spaces) and an array of chars (by getting only non-whitespace chars). 
+The return type of the methods can either be pointers to arrays (along with a int& parameter to get the length of the returned array –
+remember the parseNumbers function from one of the previous exercises?), or the SmartArray class we implemented, 
+or the std::vector class. So, if you pick SmartArray, the class should look somewhat like this (note: no need to exactly match syntax,
+just have methods with this amount of parameters and similar return types) :
+class LineParser {
+    LineParser(const string& line);
+    IntSmartArray getNumbers() const;
+    StringSmartArray getStrings() const;
+    CharSmartArray getChars() const;
+    void changeLine(const string& line);
+}
+Test your class by calling it from main() (or another function) with at least 10 examples of input data (including empty strings, 
+strings which would yield 1-element arrays, bigger strings, etc.). You don’t need to handle incorrect input – assume that if 
+getNumbers() is called, the entire string can be parsed into an array of numbers (i.e. there won’t be words mixed with the numbers).
+
