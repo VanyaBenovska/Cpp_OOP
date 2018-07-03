@@ -1,0 +1,22 @@
+Task 09_01_Randomize
+You are given a list of words in one line. Randomize their order and print each word at a separate line.
+Also, to implement this task you should write a class that is initialized with a linear container (array, vector, etc.) 
+of words and which has a getRandomized() method which returns the words randomized. Each call to getRandomized() should return 
+a different ordering of the words.
+
+Examples
+
+Input01:
+Welcome to SoftUni and have fun learning programming	
+
+Output:
+learning
+Welcome
+SoftUni
+and
+fun
+programming
+have
+to	
+
+Comment: The order of the words in the output will be different after each program execution.
